@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="650" height="650" viewBox="0 0 650 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Ruban prismatique" opacity="0.9" d="M650 0C262.097 108.333 230.645 216.667 461.29 308.333C723.387 416.667 408.871 566.667 0 650C440.323 533.333 492.742 416.667 304.032 316.667C73.3871 191.667 241.129 66.6667 650 0Z" fill="url(#paint0_linear_0_32)"/>
+<defs>
+<linearGradient id="paint0_linear_0_32" x1="0" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#214384" stop-opacity="0"/>
+<stop offset="0.42" stop-color="#386DFF" stop-opacity="0.333333"/>
+<stop offset="0.62" stop-color="#C3F0FF" stop-opacity="0.752941"/>
+<stop offset="0.68" stop-color="#1F6EFF"/>
+<stop offset="1" stop-color="#223A8A" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
