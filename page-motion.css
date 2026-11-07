@@ -1,0 +1,51 @@
+/* Cross-document transitions keep the site as real, independent HTML pages.
+   Browsers without this feature still get the short content entrance below. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  .site-header {
+    view-transition-name: site-header;
+  }
+
+  html:not(.native-page-transition) #main {
+    animation: page-arrive 460ms cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  ::view-transition-old(root) {
+    animation: page-depart 160ms ease-out both;
+  }
+
+  ::view-transition-new(root) {
+    animation: page-arrive 420ms cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  /* The navigation keeps its position while the page changes underneath. */
+  ::view-transition-group(site-header),
+  ::view-transition-new(site-header) {
+    animation: none;
+  }
+
+  ::view-transition-old(site-header) {
+    display: none;
+  }
+}
+
+@keyframes page-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes page-depart {
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
